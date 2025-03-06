@@ -21,12 +21,17 @@ struct ContentView: View {
         .onAppear {
 //            printAllPairsOf(array: array)
 //            debugPrint(sumOfElementsEquals(array: array, sum: 10))
+            debugPrint("MyArray is empty: \(myArray.isEmpty)")
+
             myArray.push(5)
             myArray.push(8)
             myArray.push(17)
             debugPrint("MyArray: \(myArray), count: \(myArray.count)")
             myArray.pop()
             debugPrint("MyArray: \(myArray), count: \(myArray.count)")
+            debugPrint("MyArray is empty: \(myArray.isEmpty)")
+            debugPrint("Get MyArray: \(myArray.getItem(at: 1))")
+
         }
     }
 }

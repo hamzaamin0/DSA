@@ -10,6 +10,7 @@ import Foundation
 struct MyArray<T> {
     private var elements: [T] = []
     var count = 0
+    var isEmpty: Bool { return count == 0 }
 
     mutating func push(_ element: T) {
         elements.append(element)
@@ -17,8 +18,17 @@ struct MyArray<T> {
     }
 
     mutating func pop() {
-        elements.remove(at: elements.count - 1)
-        count -= 1
+        if !isEmpty {
+            elements.remove(at: elements.count - 1)
+            count -= 1
+        } else {
+            debugPrint("Array is already empty! Nothing to pop")
+        }
+
+    }
+
+    func getItem(at index: Int) -> T? {
+        return index >= 0 && index < count ? elements[index] : nil
     }
 }
 
