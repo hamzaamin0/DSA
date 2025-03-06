@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     let array = [1, 2, 3, 6, 5]
-    @State var myArray = MyArray<Int>()
+    @State var myArray = MyArray<String>()
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -23,14 +23,14 @@ struct ContentView: View {
 //            debugPrint(sumOfElementsEquals(array: array, sum: 10))
             debugPrint("MyArray is empty: \(myArray.isEmpty)")
 
-            myArray.push(5)
-            myArray.push(8)
-            myArray.push(17)
+            myArray.push("hi")
+            myArray.push("you")
+            myArray.push("!")
+//            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
+            myArray.removeItem(at: 3)
             debugPrint("MyArray: \(myArray), count: \(myArray.count)")
-            myArray.pop()
-            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
-            debugPrint("MyArray is empty: \(myArray.isEmpty)")
-            debugPrint("Get MyArray: \(myArray.getItem(at: 1))")
+//            debugPrint("MyArray is empty: \(myArray.isEmpty)")
+//            debugPrint("Get MyArray: \(myArray.getItem(at: 1))")
 
         }
     }

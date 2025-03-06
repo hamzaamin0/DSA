@@ -19,7 +19,7 @@ struct MyArray<T> {
 
     mutating func pop() {
         if !isEmpty {
-            elements.remove(at: elements.count - 1)
+            elements.remove(at: count - 1)
             count -= 1
         } else {
             debugPrint("Array is already empty! Nothing to pop")
@@ -29,6 +29,29 @@ struct MyArray<T> {
 
     func getItem(at index: Int) -> T? {
         return index >= 0 && index < count ? elements[index] : nil
+    }
+
+    mutating func removeItem(at index: Int) {
+        shiftItems(index: index)
+
+    }
+
+    private mutating func shiftItems(index: Int) {
+        if index < count {
+            for _ in index...count - 1 {
+                if index == count - 1 {
+                    pop()
+                    break
+                }
+                elements[index] = elements[index+1]
+            }
+            if index < count {
+                pop()
+            }
+        } else {
+            debugPrint("Index out of bound exception")
+        }
+
     }
 }
 
