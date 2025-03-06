@@ -37,7 +37,7 @@ struct MyArray<T> {
     }
 
     private mutating func shiftItems(index: Int) {
-        if index < count {
+        if index >= 0 && index < count {
             for _ in index...count - 1 {
                 if index == count - 1 {
                     pop()
