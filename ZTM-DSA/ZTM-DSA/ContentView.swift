@@ -21,16 +21,20 @@ struct ContentView: View {
         .onAppear {
 //            printAllPairsOf(array: array)
 //            debugPrint(sumOfElementsEquals(array: array, sum: 10))
-            debugPrint("MyArray is empty: \(myArray.isEmpty)")
+//            debugPrint("MyArray is empty: \(myArray.isEmpty)")
 
-            myArray.push("hi")
-            myArray.push("you")
-            myArray.push("!")
+//            myArray.push("hi")
+//            myArray.push("you")
+//            myArray.push("!")
 //            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
-            myArray.removeItem(at: 3)
-            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
+//            myArray.removeItem(at: 3)
+//            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
 //            debugPrint("MyArray is empty: \(myArray.isEmpty)")
 //            debugPrint("Get MyArray: \(myArray.getItem(at: 1))")
+
+//            debugPrint(reverseString("hamza"))
+            debugPrint(mergeSortedArrays(array1: [0, 5, 14, 38], array2: [4, 8, 11, 18]))
+
 
         }
     }
