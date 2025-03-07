@@ -30,3 +30,32 @@ func sumOfElementsEquals2(array: [Int], sum: Int) -> Bool {
     }
     return false
 }
+
+func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    // solution 1
+//    var currentNum = 0
+//    var indices : [Int] = []
+//    for i in 0...nums.count-1 {
+//        currentNum = nums[i]
+//        for j in i+1..<nums.count {
+//            if currentNum + nums[j] == target {
+//                indices.append(i)
+//                indices.append(j)
+//                break
+//            }
+//        }
+//    }
+//    return indices
+
+    // solution 2
+    var indices : [Int] = []
+    var dict: [Int:Int] = [:]
+    for (index, item) in nums.enumerated() {
+        if dict.values.contains(item) {
+            indices.append(dict.first(where: { $0.value == item })?.key ?? -1)
+            indices.append(index)
+        }
+        dict[index] = target - item
+    }
+    return indices
+}
