@@ -36,10 +36,13 @@ struct ContentView: View {
 //            debugPrint(mergeSortedArrays(array1: [0, 5, 14, 38], array2: [4, 8, 11, 18]))
 //            debugPrint(twoSum([2,11,7,15], 9))
 //            debugPrint(maximumSubArray([-2,1,-3,4,-1,2,1,-5,4]))
-            var testArray = [0, 3, 6, 0, 7, 4]
-            debugPrint("test array before: \(testArray)")
-            moveZeros(array: &testArray)
-            debugPrint("test array after: \(testArray)")
+
+//            var testArray = [0, 3, 6, 0, 7, 4]
+//            debugPrint("test array before: \(testArray)")
+//            moveZeros(array: &testArray)
+//            debugPrint("test array after: \(testArray)")
+
+            debugPrint("contains duplicate: \(containsDuplicate([0, 3, 7, 4, 6, 0, 4]))")
 
 
 

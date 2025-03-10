@@ -16,6 +16,7 @@
 		4CEF2ED92D7974130089723C /* MyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2ED82D7974130089723C /* MyArray.swift */; };
 		4CEF2EDC2D7AC2480089723C /* MaximumSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EDB2D7AC2480089723C /* MaximumSubArray.swift */; };
 		4CEF2EDE2D7B0CED0089723C /* MoveZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EDD2D7B0CED0089723C /* MoveZeros.swift */; };
+		4CEF2EE02D7EBD3F0089723C /* ContainsDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EDF2D7EBD3F0089723C /* ContainsDuplicate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4CEF2ED82D7974130089723C /* MyArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArray.swift; sourceTree = "<group>"; };
 		4CEF2EDB2D7AC2480089723C /* MaximumSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubArray.swift; sourceTree = "<group>"; };
 		4CEF2EDD2D7B0CED0089723C /* MoveZeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveZeros.swift; sourceTree = "<group>"; };
+		4CEF2EDF2D7EBD3F0089723C /* ContainsDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainsDuplicate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				4CEF2ED82D7974130089723C /* MyArray.swift */,
 				4CEF2EDB2D7AC2480089723C /* MaximumSubArray.swift */,
 				4CEF2EDD2D7B0CED0089723C /* MoveZeros.swift */,
+				4CEF2EDF2D7EBD3F0089723C /* ContainsDuplicate.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				4CEF2EDE2D7B0CED0089723C /* MoveZeros.swift in Sources */,
 				4CEF2EC92D65EDC80089723C /* ContentView.swift in Sources */,
 				4CEF2ED52D6AE87E0089723C /* AllPairsOfAnArray.swift in Sources */,
+				4CEF2EE02D7EBD3F0089723C /* ContainsDuplicate.swift in Sources */,
 				4CEF2EDC2D7AC2480089723C /* MaximumSubArray.swift in Sources */,
 				4CEF2EC72D65EDC80089723C /* ZTM_DSAApp.swift in Sources */,
 				4CEF2ED92D7974130089723C /* MyArray.swift in Sources */,
