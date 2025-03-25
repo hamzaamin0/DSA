@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C57D1BA2D8BE963003A0E6A /* MyHashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57D1B92D8BE963003A0E6A /* MyHashTable.swift */; };
 		4CEF2EC72D65EDC80089723C /* ZTM_DSAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EC62D65EDC80089723C /* ZTM_DSAApp.swift */; };
 		4CEF2EC92D65EDC80089723C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EC82D65EDC80089723C /* ContentView.swift */; };
 		4CEF2ECB2D65EDCA0089723C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF2ECA2D65EDCA0089723C /* Assets.xcassets */; };
@@ -17,9 +18,11 @@
 		4CEF2EDC2D7AC2480089723C /* MaximumSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EDB2D7AC2480089723C /* MaximumSubArray.swift */; };
 		4CEF2EDE2D7B0CED0089723C /* MoveZeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EDD2D7B0CED0089723C /* MoveZeros.swift */; };
 		4CEF2EE02D7EBD3F0089723C /* ContainsDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EDF2D7EBD3F0089723C /* ContainsDuplicate.swift */; };
+		4CEF2EE22D7EC4DF0089723C /* RotateArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EE12D7EC4DF0089723C /* RotateArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C57D1B92D8BE963003A0E6A /* MyHashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHashTable.swift; sourceTree = "<group>"; };
 		4CEF2EC32D65EDC80089723C /* ZTM-DSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZTM-DSA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF2EC62D65EDC80089723C /* ZTM_DSAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTM_DSAApp.swift; sourceTree = "<group>"; };
 		4CEF2EC82D65EDC80089723C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		4CEF2EDB2D7AC2480089723C /* MaximumSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubArray.swift; sourceTree = "<group>"; };
 		4CEF2EDD2D7B0CED0089723C /* MoveZeros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveZeros.swift; sourceTree = "<group>"; };
 		4CEF2EDF2D7EBD3F0089723C /* ContainsDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainsDuplicate.swift; sourceTree = "<group>"; };
+		4CEF2EE12D7EC4DF0089723C /* RotateArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C57D1B82D8BE94B003A0E6A /* Hash Table */ = {
+			isa = PBXGroup;
+			children = (
+				4C57D1B92D8BE963003A0E6A /* MyHashTable.swift */,
+			);
+			path = "Hash Table";
+			sourceTree = "<group>";
+		};
 		4CEF2EBA2D65EDC80089723C = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 				4CEF2EC82D65EDC80089723C /* ContentView.swift */,
 				4CEF2ECA2D65EDCA0089723C /* Assets.xcassets */,
 				4CEF2EDA2D7AC21E0089723C /* Array */,
+				4C57D1B82D8BE94B003A0E6A /* Hash Table */,
 				4CEF2ECC2D65EDCA0089723C /* Preview Content */,
 			);
 			path = "ZTM-DSA";
@@ -89,6 +102,7 @@
 				4CEF2EDB2D7AC2480089723C /* MaximumSubArray.swift */,
 				4CEF2EDD2D7B0CED0089723C /* MoveZeros.swift */,
 				4CEF2EDF2D7EBD3F0089723C /* ContainsDuplicate.swift */,
+				4CEF2EE12D7EC4DF0089723C /* RotateArray.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -163,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CEF2EE22D7EC4DF0089723C /* RotateArray.swift in Sources */,
 				4CEF2ED72D6AE8CE0089723C /* SumOfTwoElementsEqualsTo.swift in Sources */,
+				4C57D1BA2D8BE963003A0E6A /* MyHashTable.swift in Sources */,
 				4CEF2EDE2D7B0CED0089723C /* MoveZeros.swift in Sources */,
 				4CEF2EC92D65EDC80089723C /* ContentView.swift in Sources */,
 				4CEF2ED52D6AE87E0089723C /* AllPairsOfAnArray.swift in Sources */,

@@ -19,34 +19,53 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-//            printAllPairsOf(array: array)
-//            debugPrint(sumOfElementsEquals(array: array, sum: 10))
-//            debugPrint("MyArray is empty: \(myArray.isEmpty)")
-
-//            myArray.push("hi")
-//            myArray.push("you")
-//            myArray.push("!")
-//            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
-//            myArray.removeItem(at: 3)
-//            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
-//            debugPrint("MyArray is empty: \(myArray.isEmpty)")
-//            debugPrint("Get MyArray: \(myArray.getItem(at: 1))")
-
-//            debugPrint(reverseString("hamza"))
-//            debugPrint(mergeSortedArrays(array1: [0, 5, 14, 38], array2: [4, 8, 11, 18]))
-//            debugPrint(twoSum([2,11,7,15], 9))
-//            debugPrint(maximumSubArray([-2,1,-3,4,-1,2,1,-5,4]))
-
-//            var testArray = [0, 3, 6, 0, 7, 4]
-//            debugPrint("test array before: \(testArray)")
-//            moveZeros(array: &testArray)
-//            debugPrint("test array after: \(testArray)")
-
-            debugPrint("contains duplicate: \(containsDuplicate([0, 3, 7, 4, 6, 0, 4]))")
-
-
+//            testArrays()
+            testHashTable()
 
         }
+    }
+
+    private func testArrays() {
+        //            printAllPairsOf(array: array)
+        //            debugPrint(sumOfElementsEquals(array: array, sum: 10))
+        //            debugPrint("MyArray is empty: \(myArray.isEmpty)")
+
+        //            myArray.push("hi")
+        //            myArray.push("you")
+        //            myArray.push("!")
+        //            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
+        //            myArray.removeItem(at: 3)
+        //            debugPrint("MyArray: \(myArray), count: \(myArray.count)")
+        //            debugPrint("MyArray is empty: \(myArray.isEmpty)")
+        //            debugPrint("Get MyArray: \(myArray.getItem(at: 1))")
+
+        //            debugPrint(reverseString("hamza"))
+        //            debugPrint(mergeSortedArrays(array1: [0, 5, 14, 38], array2: [4, 8, 11, 18]))
+        //            debugPrint(twoSum([2,11,7,15], 9))
+        //            debugPrint(maximumSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+
+        //            var testArray = [0, 3, 6, 0, 7, 4]
+        //            debugPrint("test array before: \(testArray)")
+        //            moveZeros(array: &testArray)
+        //            debugPrint("test array after: \(testArray)")
+
+        //            debugPrint("contains duplicate: \(containsDuplicate([0, 3, 7, 4, 6, 0, 4]))")
+
+                    debugPrint("rotatedArray: \(rotateArray(array: [1, 2, 3, 4, 5, 6, 7], k: 4))")
+    }
+
+    private func testHashTable() {
+        let hashTable = MyHashTable<String, Int>(capacity: 10)
+        hashTable.insert(key: "Alice", value: 25)
+        hashTable.insert(key: "Bob", value: 30)
+        hashTable.insert(key: "Charlie", value: 35)
+        
+        print(hashTable.getValue(for: "Bob") ?? "Not found")  // Output: 30
+        
+        hashTable.remove(key: "Bob")
+        print(hashTable.getValue(for: "Bob") ?? "Not found")  // Output: Not found
+        
+        hashTable.printTable()
     }
 }
 
