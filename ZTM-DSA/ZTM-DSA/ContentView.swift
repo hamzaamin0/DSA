@@ -55,17 +55,19 @@ struct ContentView: View {
     }
 
     private func testHashTable() {
-        let hashTable = MyHashTable<String, Int>(capacity: 10)
-        hashTable.insert(key: "Alice", value: 25)
-        hashTable.insert(key: "Bob", value: 30)
-        hashTable.insert(key: "Charlie", value: 35)
-        
-        print(hashTable.getValue(for: "Bob") ?? "Not found")  // Output: 30
-        
-        hashTable.remove(key: "Bob")
-        print(hashTable.getValue(for: "Bob") ?? "Not found")  // Output: Not found
-        
-        hashTable.printTable()
+//        let hashTable = MyHashTable<String, Int>(capacity: 10)
+//        hashTable.insert(key: "Alice", value: 25)
+//        hashTable.insert(key: "Bob", value: 30)
+//        hashTable.insert(key: "Charlie", value: 35)
+//        
+//        debugPrint(hashTable.getValue(for: "Bob") ?? "Not found")  // Output: 30
+//
+//        hashTable.remove(key: "Bob")
+//        debugPrint(hashTable.getValue(for: "Bob") ?? "Not found")  // Output: Not found
+//
+//        hashTable.printTable()
+
+        debugPrint("First recurring number is \(firstRecurringChar(array: [2, 5, 1, 3, 5, 1, 2, 4]) ?? -1000)")
     }
 }
 

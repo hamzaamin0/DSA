@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C57D1BA2D8BE963003A0E6A /* MyHashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57D1B92D8BE963003A0E6A /* MyHashTable.swift */; };
+		4CC3D4342D92A0EC00DEC655 /* FirstRecurringCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3D4332D92A0EC00DEC655 /* FirstRecurringCharacter.swift */; };
 		4CEF2EC72D65EDC80089723C /* ZTM_DSAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EC62D65EDC80089723C /* ZTM_DSAApp.swift */; };
 		4CEF2EC92D65EDC80089723C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF2EC82D65EDC80089723C /* ContentView.swift */; };
 		4CEF2ECB2D65EDCA0089723C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEF2ECA2D65EDCA0089723C /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4C57D1B92D8BE963003A0E6A /* MyHashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHashTable.swift; sourceTree = "<group>"; };
+		4CC3D4332D92A0EC00DEC655 /* FirstRecurringCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRecurringCharacter.swift; sourceTree = "<group>"; };
 		4CEF2EC32D65EDC80089723C /* ZTM-DSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZTM-DSA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEF2EC62D65EDC80089723C /* ZTM_DSAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTM_DSAApp.swift; sourceTree = "<group>"; };
 		4CEF2EC82D65EDC80089723C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				4C57D1B92D8BE963003A0E6A /* MyHashTable.swift */,
+				4CC3D4332D92A0EC00DEC655 /* FirstRecurringCharacter.swift */,
 			);
 			path = "Hash Table";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC3D4342D92A0EC00DEC655 /* FirstRecurringCharacter.swift in Sources */,
 				4CEF2EE22D7EC4DF0089723C /* RotateArray.swift in Sources */,
 				4CEF2ED72D6AE8CE0089723C /* SumOfTwoElementsEqualsTo.swift in Sources */,
 				4C57D1BA2D8BE963003A0E6A /* MyHashTable.swift in Sources */,
