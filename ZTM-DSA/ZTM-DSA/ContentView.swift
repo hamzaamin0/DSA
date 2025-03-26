@@ -20,7 +20,8 @@ struct ContentView: View {
         .padding()
         .onAppear {
 //            testArrays()
-            testHashTable()
+//            testHashTable()
+            MyLinkedList<Int>.testLinkedList()
 
         }
     }
