@@ -51,6 +51,31 @@ class MyLinkedList<Value: Equatable> {
         }
     }
 
+    func insert(at index: Int, value: Value) {
+        let newNode = MyNode(value: value)
+        var current = head
+        var currentIndex = 0
+
+        if index == 0 {
+            newNode.next = head
+            head = newNode
+            return
+        }
+
+        while current != nil && (currentIndex < index - 1) {
+            current = current?.next
+            currentIndex += 1
+        }
+
+        if current == nil {
+            print("Index out of bounds")
+            return
+        }
+
+        newNode.next = current?.next
+        current?.next = newNode
+    }
+
     func printList() {
         var current = head
 
@@ -66,11 +91,16 @@ class MyLinkedList<Value: Equatable> {
         // Example Usage
         let list = MyLinkedList<Int>()
         list.append(1)
-        list.append(2)
         list.append(3)
-        list.printList()  // Output: 1 -> 2 -> 3 -> nil
+        list.append(4)
+        list.printList()  // Output: 1 -> 3 -> 4 -> nil
 
-        list.remove(2)
-        list.printList()  // Output: 1 -> 3 -> nil
+        list.insert(at: 1, value: 2)
+        list.printList()  // Output: 1 -> 2 -> 3 -> 4 -> nil
+
+        list.insert(at: 0, value: 0)
+        list.printList()  // Output: 0 -> 1 -> 2 -> 3 -> 4 -> nil
+
+        list.insert(at: 10, value: 99)  // Output: Index out of bounds
     }
 }
